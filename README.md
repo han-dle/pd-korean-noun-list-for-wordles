@@ -5,8 +5,9 @@ This is a node library provides a list of Korean nouns extracted from [Wikidata]
 Disclaimers:
 
 - The length of word is up to 3 letters. (e.g. "가나다")
-- This list does not guarantee that words are listed in the dictionary.
+- The list does not guarantee that words are listed in the dictionary.
 - The list has duplicate values.
+- The list is not sorted lexicographically.
 
 ## Install
 
@@ -23,11 +24,13 @@ yarn add TBD
 ```javascript
 const KoreanNounList = require('pd-korean-noun-list-for-wordles');
 console.log(KoreanNounList.ALL_NOUNS.length());
+console.log(KoreanNounList.COMMON_NOUNS[0]);
 ```
 
 ```typescript
 import * as KoreanNounList from 'pd-korean-noun-list-for-wordles';
 console.log(KoreanNounList.ALL_NOUNS.length());
+console.log(KoreanNounList.COMMON_NOUNS[0]);
 ```
 
 [wikidata]: https://www.wikidata.org/wiki/Wikidata:Copyright
