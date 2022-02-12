@@ -2,12 +2,6 @@
 # yarn lockfile v1
 
 
-"pd-korean-noun-list-for-wordles@file:":
-  "resolved" "file:"
-  "version" "0.1.0"
-  dependencies:
-    "pd-korean-noun-list-for-wordles" "file:"
-
 "prettier@^2.5.1":
   "integrity" "sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg=="
   "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.5.1.tgz"
