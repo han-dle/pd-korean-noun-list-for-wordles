@@ -1,0 +1,9 @@
+{
+  "include": ["src/*"],
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "outDir": "dist",
+    "declaration": true
+  }
+}

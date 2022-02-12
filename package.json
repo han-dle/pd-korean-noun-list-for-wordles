@@ -2,12 +2,21 @@
   "name": "pd-korean-noun-list-for-wordles",
   "version": "0.1.0",
   "description": "A list of Korean nouns compiled for a purpose to used by Wordle-like games.",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": "https://github.com/lens0021/pd-korean-noun-list-for-wordles",
   "author": "Lens0021",
   "license": "CC0-1.0",
   "private": false,
   "devDependencies": {
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "test": "yarn run lint",
+    "lint": "prettier --check . && tsc",
+    "fix": "prettier --write ."
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }
