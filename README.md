@@ -6,6 +6,7 @@ Disclaimers:
 
 - The length of word is up to 3 letters. (e.g. "가나다")
 - This list does not guarantee that words are listed in the dictionary.
+- The list has duplicate values.
 
 ## Install
 
