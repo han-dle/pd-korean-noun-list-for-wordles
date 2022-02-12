@@ -1,0 +1,36 @@
+SELECT ?label ?alt
+WHERE
+{
+  { ?item rdfs:label ?label. }
+  UNION
+  { ?item skos:altLabel ?alt. }
+
+
+  {?item wdt:P31/wdt:P297* wd:Q16748888.} # advanced emotion
+  UNION
+  {?item wdt:P297* wd:Q41176.} # 건물
+  UNION
+  {?item wdt:P279* wd:Q10273457.} # 장비
+  UNION
+  {?item wdt:P31/wdt:P297* wd:Q151885.} # 개념
+  UNION
+  {?item wdt:P297* wd:Q17537576.} # 창작물
+  UNION
+  {?item wdt:P31/wdt:P297* wd:Q488383.} # 객체
+  UNION
+  {?item wdt:P31*/wdt:P297* wd:Q35120.} # 개체
+
+
+  FILTER(
+    (
+      lang(?label) = "ko"
+      && REGEX(str(?label), "^[가-힣]+$")
+      && strlen(str(?label)) < 6
+    )
+    || (
+      lang(?alt) = "ko"
+      && REGEX(str(?alt), "^[가-힣]+$")
+      && strlen(str(?alt)) < 6
+    )
+  )
+}
