@@ -25,12 +25,12 @@ WHERE
     (
       lang(?label) = "ko"
       && REGEX(str(?label), "^[가-힣]+$")
-      && strlen(str(?label)) < 6
+      && strlen(str(?label)) < 4
     )
     || (
       lang(?alt) = "ko"
       && REGEX(str(?alt), "^[가-힣]+$")
-      && strlen(str(?alt)) < 6
+      && strlen(str(?alt)) < 4
     )
   )
 }

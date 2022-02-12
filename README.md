@@ -4,7 +4,7 @@ This is a node library provides a list of Korean nouns extracted from [Wikidata]
 
 Disclaimers:
 
-- The length of word is up to 5 letters. (e.g. "가나다라마")
+- The length of word is up to 3 letters. (e.g. "가나다")
 - This list does not guarantee that words are listed in the dictionary.
 
 ## Install
