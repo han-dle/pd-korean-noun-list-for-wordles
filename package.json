@@ -3,7 +3,7 @@
   "version": "0.3.0",
   "description": "A list of Korean nouns compiled for a purpose to used by Wordle-like games.",
   "main": "src/index.js",
-  "repository": "https://github.com/lens0021/pd-korean-noun-list-for-wordles",
+  "repository": "https://github.com/han-dle/pd-korean-noun-list-for-wordles",
   "author": "Lens0021",
   "license": "CC0-1.0",
   "private": false,
